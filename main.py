@@ -1,5 +1,5 @@
-def rank_houses(scored_houses):
-    return sorted(scored_houses, key=lambda x: x["final_score"], reverse=True)
+def rank_houses(house_scores):
+    return sorted(house_scores, key=lambda x: x["final_score"], reverse=True)
 
 def check_weightage_sum(weighting_criteria):
     total_weight = sum(weighting_criteria.values())
