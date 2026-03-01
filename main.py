@@ -8,15 +8,13 @@ def check_weightage_sum(weighting_criteria):
 
 def handle_missing_values(house_list, criteria_list):
     for criterion in criteria_list:
-        available_values = 
-        [
+        available_values = [
             house[criterion]
             for house in house_list
             if house[criterion] is not None
         ]
 
-        average_value = 
-        (
+        average_value = (
             sum(available_values) / len(available_values)
             if available_values else 0
         )
