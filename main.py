@@ -8,7 +8,6 @@ def check_weightage_sum(weighting_criteria):
 
 def handle_missing_values(house_list, criteria_list):
     for criterion in criteria_list:
-
         available_values = 
         [
             house[criterion]
@@ -25,3 +24,20 @@ def handle_missing_values(house_list, criteria_list):
         for house in house_list:
             if house[criterion] is None:
                 house[criterion] = average_value
+
+def calculate_final_scores(house_list, weighting_criteria, scaled_scores, criteria_list):
+    house_scores = []
+    for house in house_list:
+        house_name = house["house_name"]
+        total_score = 0
+        
+        for criterion in criteria_list:
+            total_score += scaled_scores[house_name][criterion] * weighting_criteria[criterion]
+
+        final_score = total_score
+        house_scores.append({
+            "house_name": house_name,
+            "final_score": round(final_score, 3),
+            "normalized_details": scaled_scores[house_name]
+        })
+    return house_scores
