@@ -3,8 +3,8 @@ def rank_houses(house_scores):
 
 def check_weightage_sum(weighting_criteria):
     total_weight = sum(weighting_criteria.values())
-    if total_weight != 10:
-        raise ValueError(f"Total weight must be 10. \nCurrent sum = {total_weight}")
+    if total_weight != 50:
+        raise ValueError(f"Total weight must be 50. \nCurrent sum = {total_weight}")
 
 def handle_missing_values(house_list, criteria_list):
     for criterion in criteria_list:
@@ -34,7 +34,7 @@ def calculate_final_scores(house_list, weighting_criteria, scaled_scores, criter
         for criterion in criteria_list:
             total_score += scaled_scores[house_name][criterion] * weighting_criteria[criterion]
 
-        final_score = total_score
+        final_score = total_score / 5
         house_scores.append({
             "house_name": house_name,
             "final_score": round(final_score, 3),
