@@ -1,1 +1,12 @@
-
+- Algorithms which can be used for a rental house selection system
+- detailed explanition of Recommendation & Matching Algorithm
+- explain Multi-Criteria Decision Making (MCDM)
+- explain WSM
+- explain all the algorithms which can be used in detail
+- if using ai, then which ai is required
+- how ai works in the system
+- compare mcdm and electre and ahp
+- how to provide error in the code
+- available_values = 
+        [ shown syntax error
+- difference between list and dict
