@@ -11,3 +11,6 @@
         [ shown syntax error
 - difference between list and dict
 - how to add link to the github readme file
+- how to normalize in a decision making system
+- what if the min amd max value are equal
+- suggest a name for the repo
