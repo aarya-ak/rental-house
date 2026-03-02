@@ -18,6 +18,7 @@ Rental House Selection System is a Python-based application. Follow these steps 
 ### 2. Clone the Repository
 ```bash
 git clone https://github.com/your-username/rental-house.git
+cd rental‑house
 ```
 ### 3. Install dependencies
 ```bash
