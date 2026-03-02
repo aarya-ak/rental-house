@@ -2,4 +2,7 @@
 - Initially, each criterion was normalized between 0 and 1, so its priority or score ranged from 0.0 (lowest) to 1.0 (highest).
 - The normalization scale was changed so that each criterion’s score ranged from 0 to 10 instead of 0 to 1, to make the scores more intuitive or easier to interpret, since people often find a 0–10 scale more understandable than 0–1, and it allows finer distinctions between scores.
 - Each criterion, was finally scored out of 50, was adjusted by its weight and then divided by 5 to convert it to a 0–10 scale.
+- The normalization scale was changed, because it would be easier to provide weightage out of 10 for each criteria, and can give much more weightage for any criteria
+- as required.
 - Renamed parameters for easier understanding.
+- Refactoring was done, because syntax error occured.
