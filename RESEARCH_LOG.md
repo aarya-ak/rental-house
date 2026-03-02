@@ -10,3 +10,4 @@
 - available_values = 
         [ shown syntax error
 - difference between list and dict
+- how to add link to the github readme file
